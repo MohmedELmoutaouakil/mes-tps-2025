@@ -1,0 +1,1 @@
+![Résulat de console](images/Capture%20d'écran%202025-10-11%20181205)

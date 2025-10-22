@@ -1,6 +1,7 @@
 package metier;
 
 import dao.IDao;
+import entities.Category;
 import entities.Product;
 import org.springframework.context.ApplicationContext;
 import org.springframework.context.annotation.AnnotationConfigApplicationContext;
@@ -15,7 +16,9 @@ public class Presentation2 {
         Product product = new Product();
         product.setName("Produit 1");
         product.setPrice(100.0);
-
+        Category category = new Category();
+        category.setName("Category 1");
+        product.setCategory(category);
         productDao.create(product);
 
         System.out.println("Produit sauvegardé : " + product.getName());
